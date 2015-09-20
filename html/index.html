@@ -7,7 +7,13 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jiquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="weather.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#weatherBtn").click(function(){
+					$.post("weather.js")
+			});
+		});
+		</script>
 	</head>
 
 	<body>
@@ -17,11 +23,7 @@
 				<small>First stuff yall</small>
 			</h1>
 			<button type="button" class="btn btn-default" id="weatherBtn">Click Me!</button>
-			<script>
-				$("#weatherBtn").click(function(){
-					$.post("weather.js")
-			})
-			</script>
+
 		</div>
 		
 		<div id="Weather">

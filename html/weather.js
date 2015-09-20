@@ -1,0 +1,7 @@
+
+function getWeather(){
+	var webdriver = require('selinium-webdriver')
+	var driver = new webdriver.Builder().withCapabilities(webdriver.Capabilities.firefox()).build()
+
+	driver.get('http://www.google.com') 
+}	

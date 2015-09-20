@@ -17,6 +17,14 @@
 				<small>First stuff yall</small>
 			</h1>
 			<button type="button" class="btn btn-default" onclick="getWeather()">Click Me!</button>
+			<script type="text/javascript">
+				function getWeather(){
+					var webdriver = require('selinium-webdriver')
+					var driver = new webdriver.Builder().withCapabilities(webdriver.Capabilities.fire()).build()
+
+					driver.get('http://www.google.com') 
+				}	
+			</script>
 		</div>
 		
 		<div id="Weather">

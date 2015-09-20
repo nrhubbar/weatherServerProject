@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jiquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="/home/nrhubbard/Documnets/node"></script>
+		<script src="weather.js"></script>
 	</head>
 
 	<body>
@@ -16,20 +16,16 @@
 				Hello World!
 				<small>First stuff yall</small>
 			</h1>
-			<button type="button" class="btn btn-default" onclick="getWeather()">Click Me!</button>
+			<button type="button" class="btn btn-default" id="weatherBtn">Click Me!</button>
 			<script>
-				function getWeather(){
-					document.getElementById("Weather").innerHTML = "Hello World";
-					var webdriver = require('selinium-webdriver');
-					var driver = new webdriver.Builder().withCapabilities(webdriver.Capabilities.chromedriver()).build();
-
-					driver.get('http://www.google.com'); 
-				}	
+				$("#weatherBtn").click(function(){
+					$.post("weather.js")
+			})
 			</script>
 		</div>
 		
 		<div id="Weather">
-
+			<h3> Text </h3>
 		</div>
 	
 	</body>

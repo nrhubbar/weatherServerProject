@@ -10,7 +10,9 @@
 		<script>
 		$(document).ready(function(){
 			$("#weatherBtn").click(function(){
-					$.post("weather.js")
+					$.post("weather.js");
+					$("#ttbh).hide();
+
 			});
 		});
 		</script>
@@ -23,6 +25,7 @@
 				<small>First stuff yall</small>
 			</h1>
 			<button type="button" class="btn btn-default" id="weatherBtn">Click Me!</button>
+			<h1 id="ttbh">Watch me disappear</h1>
 		</div>
 	</body>
 </html>

@@ -1,6 +1,6 @@
 
 function getWeather(){
-	document.getElementsById('ttbh').hide();
+	log.console("In getWeather");
 	var webdriver = require('selinium-webdriver')
 	var driver = new webdriver.Builder().withCapabilities(webdriver.Capabilities.chromedriver()).build()
 

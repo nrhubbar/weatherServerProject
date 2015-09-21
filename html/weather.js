@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 	// driver.get('http://www.google.com')
 	$("#weatherBtn").click(function(){
-		log.console("Hey");
+		console.log("Hey");
 		//$.post("weather.js");
 		$("small").hide();
 	});

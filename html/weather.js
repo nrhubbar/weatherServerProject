@@ -9,5 +9,8 @@ $(document).ready(function(){
 		//$.post("weather.js");
 		$("small").hide();
 	});
+	$('#bringBack').click(function(){
+		$("small").show();
+	});
 
 });	

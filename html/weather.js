@@ -7,7 +7,7 @@ $(document).ready(function(){
 	});
 	$('#bringBack').click(function(){
 		$.get("127.0.0.0:3000","",function(){
-			$.("small").show();
+			$("small").show();
 		});
 		console.log("finished getWeather")
 	});
